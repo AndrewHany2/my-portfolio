@@ -1,0 +1,16 @@
+.box {
+  box-sizing: border-box;
+  position: relative;
+}
+.box-icon {
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 30px;
+  justify-content: center !important;
+  text-align: center;
+  width: 55px;
+  height: 55px;
+}
+.box > h3 {
+  font-size: 1.25rem;
+}

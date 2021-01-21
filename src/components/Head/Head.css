@@ -1,0 +1,39 @@
+.component-head {
+  text-align: center !important;
+  margin-bottom: 3rem !important;
+  position: relative !important;
+  display: flex !important;
+}
+
+.component-head > h2 {
+  color: #dee3e4 !important;
+  opacity: 0.6;
+  font-weight: 600 !important;
+  line-height: 1.3;
+  font-size: calc(1.95rem + 8.4vw) !important;
+  margin-bottom: 0 !important;
+  width: 100%;
+}
+
+.component-head > p {
+  z-index: +1;
+  font-weight: 600 !important;
+  line-height: 1.6 !important;
+  font-size: 2.25rem !important;
+  color: #343a40 !important;
+  width: 100% !important;
+  position: absolute !important;
+  align-self: center !important;
+  box-sizing: border-box;
+  margin-block-start: 1em;
+}
+.component-head > p > span {
+  border-width: 3px;
+  display: block;
+  width: 80px;
+  border-color: rgb(32, 201, 151) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border-bottom: 4px solid rgb(32, 201, 151) !important;
+  box-sizing: border-box;
+}
