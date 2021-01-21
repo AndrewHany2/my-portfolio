@@ -1,3 +1,15 @@
 .btn {
   color: blanchedalmond;
 }
+.list-style-2 {
+  padding: 0;
+}
+.list-style-2 > li {
+  list-style-type: none;
+  border-bottom: 1px solid #eaeaea;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.font-weight-600 {
+  font-weight: 550;
+}

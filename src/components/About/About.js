@@ -46,10 +46,12 @@ function About() {
                   <span className="font-weight-600 mr-2">From:</span>
                   Egypt
                 </li>
+                <li className="border-0">
+                  <a className="btn my-button my-color-background my-color-border rounded-pill smooth-scroll">
+                    Download CV
+                  </a>{" "}
+                </li>
               </ul>
-              <a className="btn my-button my-color-background my-color-border rounded-pill smooth-scroll">
-                Download CV
-              </a>{" "}
             </div>
           </div>
         </div>
