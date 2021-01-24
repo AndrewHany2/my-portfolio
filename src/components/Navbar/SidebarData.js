@@ -1,40 +1,36 @@
-import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
-import * as IoIcons from "react-icons/io";
 import * as FcIcons from "react-icons/fc";
-import * as FiIcons from "react-icons/fi";
 
 import React from "react";
 
 export const SidebarData = [
   {
     title: "Home",
-    path: "#home",
-    icon: <AiIcons.AiFillHome></AiIcons.AiFillHome>,
+    path: "home",
+    icon: <FcIcons.FcHome size={25}></FcIcons.FcHome>,
     cName: "nav-text",
   },
   {
     title: "About",
-    path: "/",
-    icon: <FcIcons.FcAbout></FcIcons.FcAbout>,
+    path: "about",
+    icon: <FcIcons.FcAbout size={25}></FcIcons.FcAbout>,
     cName: "nav-text",
   },
   {
     title: "Services",
-    path: "/",
-    icon: <FcIcons.FcSelfServiceKiosk></FcIcons.FcSelfServiceKiosk>,
+    path: "services",
+    icon: <FcIcons.FcSelfServiceKiosk size={25}></FcIcons.FcSelfServiceKiosk>,
     cName: "nav-text",
   },
   {
     title: "Resume",
-    path: "/",
-    icon: <FcIcons.FcPackage></FcIcons.FcPackage>,
+    path: "resume",
+    icon: <FcIcons.FcPackage size={25}></FcIcons.FcPackage>,
     cName: "nav-text",
   },
   {
-    title: "Work",
-    path: "/",
-    icon: <FcIcons.FcSelfServiceKiosk></FcIcons.FcSelfServiceKiosk>,
+    title: "Contact",
+    path: "contact",
+    icon: <FcIcons.FcBusinessContact size={25}></FcIcons.FcBusinessContact>,
     cName: "nav-text",
   },
 ];

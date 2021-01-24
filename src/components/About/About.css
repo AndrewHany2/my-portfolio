@@ -5,6 +5,7 @@
   padding: 0;
 }
 .list-style-2 > li {
+  padding-left: 0;
   list-style-type: none;
   border-bottom: 1px solid #eaeaea;
   padding-top: 12px;

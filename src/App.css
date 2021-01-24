@@ -8,12 +8,13 @@
   position: relative;
   overflow: hidden;
 }
-
-.app.minus {
-  margin-left: 18vw;
-}
 .app {
   margin-left: 0vw;
+  box-sizing: border-box;
+}
+.app.minus {
+  margin-left: 18vw;
+  margin-top: 0;
 }
 .my-color {
   color: rgb(32, 201, 151);

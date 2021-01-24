@@ -1,7 +1,7 @@
 const particles = {
   particles: {
     number: {
-      value: 130,
+      value: 110,
       density: {
         enable: true,
         value_area: 800,
@@ -37,7 +37,7 @@ const particles = {
     },
     size: {
       value: 4,
-      random: true,
+      random: false,
       anim: {
         enable: false,
         speed: 40,
@@ -75,7 +75,7 @@ const particles = {
         mode: "grab",
       },
       onclick: {
-        enable: true,
+        enable: false,
         mode: "push",
       },
       resize: true,

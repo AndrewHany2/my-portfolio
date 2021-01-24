@@ -1,10 +1,11 @@
 import React from "react";
 import Head from "../Head/Head";
+import { Element } from "react-scroll";
 import "./About.css";
 
 function About() {
   return (
-    <section id="about" className="section py-5">
+    <section name="about" id="about" className="section py-5">
       <div className="container px-lg-5">
         <Head backText="ABOUT ME" frontText="Know Me More" />
         <div className="row">
@@ -47,7 +48,11 @@ function About() {
                   Egypt
                 </li>
                 <li className="border-0">
-                  <a className="btn my-button my-color-background my-color-border rounded-pill smooth-scroll">
+                  <a
+                    className="btn my-button my-color-background my-color-border rounded-pill smooth-scroll"
+                    href="/Andrew-Hany.pdf"
+                    download
+                  >
                     Download CV
                   </a>{" "}
                 </li>
