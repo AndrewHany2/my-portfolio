@@ -30,7 +30,6 @@ function Contact() {
       to_name: "Andrew",
       feedback: note,
     };
-    console.log(process.SERVICES_ID);
     emailjs
       .send(
         process.env.REACT_APP_SERVICES_ID,
@@ -162,7 +161,7 @@ function Contact() {
               </div>
               {!responseSucceded && !error ? (
                 <p className="text-center mt-4 mb-0">
-                  <a
+                  <button
                     id="submit-btn"
                     className="btn my-button my-color-background my-color-border rounded-pill d-inline-flex"
                     type="submit"
@@ -171,7 +170,7 @@ function Contact() {
                     }}
                   >
                     Send Message
-                  </a>
+                  </button>
                 </p>
               ) : null}
             </form>

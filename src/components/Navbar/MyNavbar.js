@@ -1,28 +1,36 @@
-import React from "react";
-import * as BsIcons from "react-icons/bs";
+import React, { useState, useEffect } from "react";
 import { SidebarData } from "./SidebarData";
 import { Link } from "react-scroll";
 import { Nav, Navbar } from "react-bootstrap";
 import "./Navbar.css";
 
 function MyNavbar(props) {
+  const [navbar, setNavbar] = useState(false);
+  const changeBackground = () => {
+    if (window.scrollY >= 0.2 * window.innerHeight) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", changeBackground);
+    return () => {
+      window.removeEventListener("scroll", changeBackground);
+    };
+  });
   return (
     <>
-      {/* {!props.sidebar || props.windowSize === "small" ? ( */}
-      <Navbar className="navb" fixed="top" bg="dark" variant="dark" expand="md">
+      <Navbar
+        className={navbar ? "navb navbar-active" : "navb"}
+        fixed="top"
+        bg="dark"
+        variant="dark"
+        expand="md"
+      >
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto navb">
-            {props.windowSize === "large" ? (
-              <Nav.Item className="menu-bars">
-                <Nav.Link>
-                  <BsIcons.BsBoxArrowInLeft
-                    onClick={props.onToggleSidebar}
-                    size={20}
-                  ></BsIcons.BsBoxArrowInLeft>
-                </Nav.Link>
-              </Nav.Item>
-            ) : null}
+          <Nav className="navb">
             {SidebarData.map((item, index) => (
               <Link
                 key={index}

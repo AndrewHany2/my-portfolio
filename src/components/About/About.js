@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "../Head/Head";
-import { Element } from "react-scroll";
 import "./About.css";
 
 function About() {
@@ -18,10 +17,10 @@ function About() {
               a Web Developer
             </h2>
             <p>
-              I help you build website for your business at an affordable price.
-              We will guarantee exceptional results while working with our
-              dedicated team. when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
+              I am full stack MERN full stack developer, I help you build
+              website for your business at an affordable price. We will
+              guarantee exceptional results while working with our dedicated
+              team.
             </p>
             <p>
               Delivering work within time and budget which meets client’s
@@ -52,6 +51,7 @@ function About() {
                     className="btn my-button my-color-background my-color-border rounded-pill smooth-scroll"
                     href="https://drive.google.com/file/d/1870qlrFswkWTk2LSbahH0LH6ICOUXLpm/view"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     Download CV
                   </a>{" "}

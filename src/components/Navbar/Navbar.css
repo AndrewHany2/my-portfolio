@@ -2,10 +2,13 @@
   text-decoration: none !important;
 }
 .navb {
-  background-color: rgb(7, 4, 46) !important;
+  background-color: rgba(4, 18, 46, 0.3) !important;
 }
-.navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.5);
+.navb.navbar-active {
+  background-color: rgba(4, 18, 46, 1) !important;
+}
+.navbar-dark .navbar-nav.nav-link {
+  color: rgba(255, 255, 255, 0.7);
 }
 .nav-text > li:hover {
   border-radius: 15px;
@@ -117,4 +120,7 @@ a:hover {
 }
 .navbar-toggle-2 > a {
   cursor: pointer !important;
+}
+#basic-navbar-nav {
+  justify-content: center;
 }

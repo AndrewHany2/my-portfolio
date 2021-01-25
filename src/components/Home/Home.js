@@ -4,7 +4,7 @@ import Particles from "react-particles-js";
 import particles from "../../constants/particle";
 import { Container, Button } from "react-bootstrap";
 import ReactTypingEffect from "react-typing-effect";
-import { Link, scroller } from "react-scroll";
+import { scroller } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
