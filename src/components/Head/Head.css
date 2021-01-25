@@ -10,7 +10,7 @@
   opacity: 0.6;
   font-weight: 600 !important;
   line-height: 1.3;
-  font-size: 80px;
+  font-size: 100px;
   margin-bottom: 0 !important;
   width: 100%;
 }
@@ -36,6 +36,14 @@
   margin-right: auto !important;
   border-bottom: 4px solid rgb(32, 201, 151) !important;
   box-sizing: border-box;
+}
+@media only screen and (max-width: 800px) {
+  .component-head > h2 {
+    font-size: 90px;
+  }
+  .component-head > p {
+    font-size: 30px;
+  }
 }
 @media only screen and (max-width: 550px) {
   .component-head > h2 {
