@@ -50,7 +50,7 @@ function About() {
                 <li className="border-0">
                   <a
                     className="btn my-button my-color-background my-color-border rounded-pill smooth-scroll"
-                    href="/Andrew-Hany.pdf"
+                    href="https://drive.google.com/file/d/1870qlrFswkWTk2LSbahH0LH6ICOUXLpm/view"
                     download
                   >
                     Download CV
