@@ -73,7 +73,7 @@ function Home() {
                     scrolTo("contact");
                   }}
                 >
-                  Contant
+                  Contact
                 </a>
               </Button>
             </div>

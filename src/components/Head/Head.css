@@ -10,7 +10,7 @@
   opacity: 0.6;
   font-weight: 600 !important;
   line-height: 1.3;
-  font-size: calc(1.95rem + 8.4vw) !important;
+  font-size: 80px;
   margin-bottom: 0 !important;
   width: 100%;
 }
@@ -19,7 +19,7 @@
   z-index: +1;
   font-weight: 600 !important;
   line-height: 1.6 !important;
-  font-size: 2.25rem !important;
+  font-size: 40px;
   color: #343a40 !important;
   width: 100% !important;
   position: absolute !important;
@@ -36,4 +36,37 @@
   margin-right: auto !important;
   border-bottom: 4px solid rgb(32, 201, 151) !important;
   box-sizing: border-box;
+}
+@media only screen and (max-width: 550px) {
+  .component-head > h2 {
+    font-size: 70px;
+  }
+  .component-head > p {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .component-head > h2 {
+    font-size: 60px;
+  }
+  .component-head > p {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .component-head > h2 {
+    font-size: 50px;
+  }
+  .component-head > p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .component-head > h2 {
+    font-size: 40px;
+  }
+  .component-head > p {
+    font-size: 15px;
+  }
 }

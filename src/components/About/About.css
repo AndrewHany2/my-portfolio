@@ -14,3 +14,54 @@
 .font-weight-600 {
   font-weight: 550;
 }
+.list-style-2 > li > a {
+  word-break: break-word;
+}
+@media only screen and (max-width: 550px) {
+  #about > div > div.row > div.col-lg-8.text-center.text-lg-left > h2 {
+    font-size: 25px;
+  }
+  #about > div > div.row > div.col-lg-8.text-center.text-lg-left > p {
+    font-size: 15px;
+  }
+  #about > div > div.row > div.col-lg-4.mt-5.mt-lg-0 > div {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #about > div > div.row > div.col-lg-8.text-center.text-lg-left > h2 {
+    font-size: 20px;
+  }
+  #about > div > div.row > div.col-lg-8.text-center.text-lg-left > p {
+    font-size: 13px;
+  }
+  #about > div > div.row > div.col-lg-4.mt-5.mt-lg-0 > div {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #about > div > div.row > div.col-lg-8.text-center.text-lg-left > h2 {
+    font-size: 19px;
+  }
+  #about > div > div.row > div.col-lg-8.text-center.text-lg-left > p {
+    font-size: 12px;
+  }
+  #about > div > div.row > div.col-lg-4.mt-5.mt-lg-0 > div {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  #about > div > div.row > div.col-lg-8.text-center.text-lg-left > h2 {
+    font-size: 15px;
+  }
+  #about > div > div.row > div.col-lg-8.text-center.text-lg-left > p {
+    font-size: 10px;
+  }
+  #about > div > div.row > div.col-lg-4.mt-5.mt-lg-0 > div {
+    font-size: 13px;
+  }
+  .my-button {
+    font-size: 12px;
+  }
+}

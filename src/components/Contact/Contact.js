@@ -10,6 +10,7 @@ import {
   FaLinkedin,
   FaGithub,
 } from "react-icons/fa";
+import "./Contact.css";
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -114,7 +115,7 @@ function Contact() {
               </a>
             </p>
           </div>
-          <div className="col-md-8 col-xl-9 order-0 order-md-1 pl-5 pr-0">
+          <div className="col-md-8 col-xl-9 order-0 order-md-1">
             <h2 className="mb-3 text-3 text-uppercase text-center text-md-left">
               Send me a note
             </h2>

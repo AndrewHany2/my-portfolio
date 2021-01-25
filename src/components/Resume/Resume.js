@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "../Head/Head";
+import "./Resume.css";
 
 function Resume(props) {
   return (
@@ -42,7 +43,7 @@ function Resume(props) {
               <li className="list-group-item border border-info border-bottom-0">
                 React, Hooks
               </li>
-              <li className="list-group-item border border-info">Redux</li>
+              <li className="list-group-item border border-info mb-3">Redux</li>
             </ul>
           </div>
           <div className="col-md-6">

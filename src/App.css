@@ -4,16 +4,14 @@
   font-family: "Poppins", sans-serif;
 }
 .section {
-  min-height: 100vh;
   position: relative;
-  overflow: hidden;
 }
 .app {
   margin-left: 0vw;
   box-sizing: border-box;
 }
 .app.minus {
-  margin-left: 18vw;
+  /* margin-left: 18vw; */
   margin-top: 0;
 }
 .my-color {

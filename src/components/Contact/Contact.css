@@ -1,3 +1,60 @@
 .alert-info {
   background-color: rgb(32, 201, 151);
 }
+@media only screen and (max-width: 550px) {
+  #contact > div > div.row > div.col-md-8.col-xl-9.order-0.order-md-1 > h2 {
+    font-size: 30px;
+  }
+  #contact
+    > div
+    > div.row
+    > div.col-md-4.col-xl-3.order-1.order-md-0.text-center.text-md-left.mt-5.p-0
+    > p {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #contact > div > div.row > div.col-md-8.col-xl-9.order-0.order-md-1 > h2 {
+    font-size: 20px;
+  }
+  #contact
+    > div
+    > div.row
+    > div.col-md-4.col-xl-3.order-1.order-md-0.text-center.text-md-left.mt-5.p-0
+    > p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #contact > div > div.row > div.col-md-8.col-xl-9.order-0.order-md-1 > h2 {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  #contact > div > div.row > div.col-md-8.col-xl-9.order-0.order-md-1 > h2 {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 10px) and (max-width: 400px) {
+  #contact
+    > div
+    > div.row
+    > div.col-md-8.col-xl-9.order-0.order-md-1
+    > form
+    > div.row
+    > div
+    > div
+    > input {
+    font-size: 12px;
+  }
+  #contact
+    > div
+    > div.row
+    > div.col-md-8.col-xl-9.order-0.order-md-1
+    > form
+    > div.form-group
+    > textarea {
+    font-size: 12px;
+  }
+}

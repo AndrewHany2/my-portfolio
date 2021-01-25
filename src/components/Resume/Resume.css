@@ -1,3 +1,116 @@
 .border-info {
   border-color: rgb(32, 201, 151);
 }
+@media only screen and (max-width: 550px) {
+  #resume
+    > div
+    > div.row.d-flex.justify-content-center.text-alignment-center
+    > div
+    > h2 {
+    font-size: 40px;
+  }
+  #resume
+    > div
+    > div.row.d-flex.justify-content-center.text-alignment-center
+    > div
+    > div
+    > h3 {
+    font-size: 30px;
+  }
+  #resume
+    > div
+    > div.row.d-flex.justify-content-center.text-alignment-center
+    > div
+    > div
+    > p.text-danger {
+    font-size: 25px;
+  }
+  #resume
+    > div
+    > div.row.d-flex.justify-content-center.text-alignment-center
+    > div
+    > div
+    > p {
+    font-size: 15px;
+  }
+  #resume > div > h2 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #resume
+    > div
+    > div.row.d-flex.justify-content-center.text-alignment-center
+    > div
+    > h2 {
+    font-size: 30px;
+  }
+  #resume
+    > div
+    > div.row.d-flex.justify-content-center.text-alignment-center
+    > div
+    > div
+    > h3 {
+    font-size: 23px;
+  }
+  #resume
+    > div
+    > div.row.d-flex.justify-content-center.text-alignment-center
+    > div
+    > div
+    > p.text-danger {
+    font-size: 20px;
+  }
+  #resume
+    > div
+    > div.row.d-flex.justify-content-center.text-alignment-center
+    > div
+    > div
+    > p {
+    font-size: 12px;
+  }
+  #resume > div > h2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  #resume
+    > div
+    > div.row.d-flex.justify-content-center.text-alignment-center
+    > div
+    > h2 {
+    font-size: 25px;
+  }
+  #resume
+    > div
+    > div.row.d-flex.justify-content-center.text-alignment-center
+    > div
+    > div
+    > h3 {
+    font-size: 20px;
+  }
+  #resume
+    > div
+    > div.row.d-flex.justify-content-center.text-alignment-center
+    > div
+    > div
+    > p.text-danger {
+    font-size: 17px;
+  }
+  #resume
+    > div
+    > div.row.d-flex.justify-content-center.text-alignment-center
+    > div
+    > div
+    > p {
+    font-size: 13px;
+  }
+  #resume > div > h2 {
+    font-size: 25px;
+  }
+  #resume > div > div.row.mb-5 > div:nth-child(1) > ul > li {
+    font-size: 13px;
+  }
+}
