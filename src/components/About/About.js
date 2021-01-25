@@ -51,7 +51,7 @@ function About() {
                   <a
                     className="btn my-button my-color-background my-color-border rounded-pill smooth-scroll"
                     href="https://drive.google.com/file/d/1870qlrFswkWTk2LSbahH0LH6ICOUXLpm/view"
-                    download
+                    target="_blank"
                   >
                     Download CV
                   </a>{" "}
