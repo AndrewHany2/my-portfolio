@@ -12,23 +12,51 @@ import {
 } from "react-icons/fa";
 import "./Contact.css";
 import dotenv from "dotenv";
-
+import { useFormik } from "formik";
 dotenv.config();
 
+const validate = (values) => {
+  const errors = {};
+  if (!values.name) {
+    errors.name = "Required";
+  } else if (values.name.length > 15) {
+    errors.name = "Must be 15 characters or less";
+  }
+  if (!values.note) {
+    errors.note = "Required";
+  } else if (values.note.length < 10) {
+    errors.note = "Must be 10 characters or more";
+  }
+
+  if (!values.email) {
+    errors.email = "Required";
+  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+    errors.email = "Invalid email address";
+  }
+  return errors;
+};
+
 function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [note, setNote] = useState("");
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      note: "",
+    },
+    validate,
+    onSubmit: (values) => {
+      sendEmail(values);
+    },
+  });
   const [responseSucceded, setResponseSucceded] = useState(false);
   const [error, setError] = useState(false);
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const sendEmail = (values) => {
     const templateParams = {
-      from_name: name,
-      from_email: email,
+      from_name: values.name,
+      from_email: values.email,
       to_name: "Andrew",
-      feedback: note,
+      feedback: values.note,
     };
     emailjs
       .send(
@@ -118,46 +146,52 @@ function Contact() {
             <h2 className="mb-3 text-3 text-uppercase text-center text-md-left">
               Send me a note
             </h2>
-            <form>
+            <form onSubmit={formik.handleSubmit}>
               <div className="row">
                 <div className="col-xl-6">
                   <div className="form-group">
                     <input
+                      id="name"
+                      name="name"
                       type="text"
                       className="form-control"
-                      required
                       placeholder="Name"
-                      value={name}
-                      onChange={(e) => {
-                        setName(e.target.value);
-                      }}
+                      value={formik.values.name}
+                      onChange={formik.handleChange}
                     ></input>
+                    {formik.errors.name ? (
+                      <div>{formik.errors.name}</div>
+                    ) : null}
                   </div>
                 </div>
                 <div className="col-xl-6">
                   <div className="form-group">
                     <input
+                      id="name"
+                      name="email"
                       type="text"
                       className="form-control"
-                      required
                       placeholder="Email"
-                      value={email}
-                      onChange={(e) => {
-                        setEmail(e.target.value);
-                      }}
+                      value={formik.values.email}
+                      onChange={formik.handleChange}
                     ></input>
+                    {formik.errors.email ? (
+                      <div>{formik.errors.email}</div>
+                    ) : null}
                   </div>
                 </div>
               </div>
               <div className="form-group">
                 <textarea
-                  name="form-message"
+                  id="note"
+                  name="note"
                   className="form-control"
                   rows="5"
-                  required=""
                   placeholder="Tell us more about your needs........"
-                  onChange={(e) => setNote(e.target.value)}
+                  value={formik.values.note}
+                  onChange={formik.handleChange}
                 ></textarea>
+                {formik.errors.note ? <div>{formik.errors.note}</div> : null}
               </div>
               {!responseSucceded && !error ? (
                 <p className="text-center mt-4 mb-0">
@@ -165,9 +199,6 @@ function Contact() {
                     id="submit-btn"
                     className="btn my-button my-color-background my-color-border rounded-pill d-inline-flex"
                     type="submit"
-                    onClick={(e) => {
-                      handleSubmit(e);
-                    }}
                   >
                     Send Message
                   </button>
